@@ -1,0 +1,30 @@
+{
+  "introText": "Enjoy listening to music",
+  "@introText": {
+    "description": ""
+  },
+  "introSubText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sagittis enim purus sed phasellus. Cursus ornare id scelerisque aliquam.",
+  "@introSubText": {
+    "description": ""
+  },
+  "getStartedTextBtn": "Get Started",
+  "@getStartedTextBtn": {
+    "description": ""
+  },
+  "chooseModeText": "Choose Mode",
+  "@chooseModeText": {
+    "description": ""
+  },
+  "continueBtnText": "Continue",
+  "@continueBtnText": {
+    "description": ""
+  },
+  "darkModeText": "Dark Mode",
+  "@darkModeText": {
+    "description": ""
+  },
+  "lightModeText": "Light Mode",
+  "@lightModeText": {
+    "description": ""
+  }
+}

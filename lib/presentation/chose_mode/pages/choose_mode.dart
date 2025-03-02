@@ -1,0 +1,150 @@
+import 'dart:ui';
+
+import 'package:dot_know/common/widgets/buttom/basic_app_button.dart';
+import 'package:dot_know/core/configs/assets/app_images.dart';
+import 'package:dot_know/core/configs/assets/app_vectors.dart';
+import 'package:dot_know/core/configs/theme/app_color.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+
+class ChooseModePage extends StatelessWidget {
+  const ChooseModePage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Stack(
+        children: [
+          Container(
+            padding: const EdgeInsets.symmetric(
+                vertical: 46,
+                horizontal: 40
+            ),
+            decoration: const BoxDecoration(
+                image: DecorationImage(
+                    fit: BoxFit.fill,
+                    image: AssetImage(
+                      AppImages.chooseModeBackground,
+                    )
+                )
+            ),
+          ),
+
+          Container(
+            color: Colors.black.withOpacity(0.15),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.symmetric(
+                vertical: 40,
+                horizontal: 40
+            ),
+            child: Column(
+              children: [
+                Padding(
+                  padding: EdgeInsets.symmetric(vertical: 10, horizontal: 0),
+                  child: Align(
+                    alignment: Alignment.topCenter,
+                    child: SvgPicture.asset(
+                        AppVectors.logo
+                    ),
+                  ),
+                ),
+
+                const Spacer(),
+                Text(
+                  AppLocalizations.of(context)!.chooseModeText,
+                  style: const TextStyle(
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white,
+                      fontSize: 18
+                  ),
+                ),
+                const SizedBox(height: 40,),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Column(
+                      children: [
+                        ClipOval(
+                          child: BackdropFilter(
+                            filter: ImageFilter.blur(sigmaX: 10, sigmaY: 10),
+                            child: Container(
+                              height: 80,
+                              width: 80,
+                              decoration: BoxDecoration(
+                                color: AppColors.choseBoxDecorationColor.withOpacity(0.15),
+                                shape: BoxShape.circle
+                              ),
+                              child: SvgPicture.asset(
+                                AppVectors.moon,
+                                fit: BoxFit.none,
+                              ),
+                            ),
+                          ),
+                        ),
+                        SizedBox(height: 15,),
+                        Text(
+                          AppLocalizations.of(context)!.darkModeText,
+                          style: TextStyle(
+                            fontWeight: FontWeight.w500,
+                            fontSize: 13,
+                            color: AppColors.grey
+                          ),
+                        )
+                      ],
+                    ),
+                    SizedBox(width: 40,),
+                    Column(
+                      children: [
+                        ClipOval(
+                          child: BackdropFilter(
+                            filter: ImageFilter.blur(sigmaX: 10, sigmaY: 10),
+                            child: Container(
+                              height: 80,
+                              width: 80,
+                              decoration: BoxDecoration(
+                                  color: AppColors.choseBoxDecorationColor.withOpacity(0.15),
+                                  shape: BoxShape.circle
+                              ),
+                              child: SvgPicture.asset(
+                                AppVectors.sun,
+                                fit: BoxFit.none,
+                              ),
+                            ),
+                          ),
+                        ),
+                        SizedBox(height: 15,),
+                        Text(
+                          AppLocalizations.of(context)!.lightModeText,
+                          style: TextStyle(
+                              fontWeight: FontWeight.w500,
+                              fontSize: 13,
+                              color: AppColors.grey
+                          ),)
+                      ],
+                    ),
+                  ],
+                ),
+
+                const SizedBox(height: 50,),
+                BasicAppButton(
+                  onPressed: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (BuildContext context) => const ChooseModePage()
+                        )
+                    );
+                  },
+                  title: AppLocalizations.of(context)!.continueBtnText, height: 80,
+                )
+              ],
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
