@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "909386468442",
+    "project_id": "sp-app-100021996",
+    "storage_bucket": "sp-app-100021996.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:909386468442:android:732d83236e4ba5e20a1c63",
+        "android_client_info": {
+          "package_name": "com.ovs.dot_know"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdWlE01w_l4Qy2gPzk3xGnzZufQjXr7Ec"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
