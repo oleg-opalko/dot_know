@@ -26,5 +26,45 @@
   "lightModeText": "Light Mode",
   "@lightModeText": {
     "description": ""
+  },
+  "authPageSubTitleText": "Spotify is a proprietary Swedish audio streaming and media services provider",
+  "@authPageSubTitleText": {
+    "description": ""
+  },
+  "registerText": "Register",
+  "@registerText": {
+    "description": ""
+  },
+  "signInText": "Sign In",
+  "@signInText": {
+    "description": ""
+  },
+  "fullNameText": "Full Name",
+  "@fullNameText": {
+    "description": ""
+  },
+  "emailText": "Enter Email",
+  "@emailText": {
+    "description": ""
+  },
+  "passwordText": "Password",
+  "@passwordText": {
+    "description": ""
+  },
+  "createAccountText": "Create Account",
+  "@createAccountText": {
+    "description": ""
+  },
+  "doYouHaveAccountText": "Do you have account?",
+  "@doYouHaveAccountText": {
+    "description": ""
+  },
+  "notAMemberText": "Not A Member?",
+  "@notAMemberText": {
+    "description": ""
+  },
+  "registerNowText": "Register Now",
+  "@registerNowBtnText": {
+    "description": ""
   }
 }

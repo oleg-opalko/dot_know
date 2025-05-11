@@ -1,2 +1,7 @@
 -- flutter gen-l10n -- Generate new localizations words in project
+-- dart pub global activate flutterfire_cli -- activated firebase cli in project
+-- dart pub global run flutterfire_cli:flutterfire configure -- call this comand for create project in firebase console
+
+
+
 

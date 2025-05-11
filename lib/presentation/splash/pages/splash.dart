@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class SplashPage extends StatefulWidget {
-  const SplashPage({super.key});
+  const  SplashPage({super.key});
 
   @override
   State<SplashPage> createState() => _SplashPageState();

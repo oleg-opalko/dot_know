@@ -8,4 +8,7 @@ class AppColors {
   static const darkGrey = Color(0xff343434);
   static const textBtnColor = Color(0xffF6F6F6);
   static const choseBoxDecorationColor = Color(0xff30393C);
+  static const hintTextColorDark = Color(0xffA7A7A7);
+  static const hintTextColorLight = Color(0xff383838);
+
 }
